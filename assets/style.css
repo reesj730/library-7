@@ -1,0 +1,368 @@
+
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500|Inknut+Antiqua:400,500,600,700,800|Alegreya:800,900');
+
+body{
+	position: relative;
+	width: 1440px;
+	height: 913px;
+	background: #FFFFFF;
+}
+
+/* text settings */
+
+html {
+  -ms-text-size-adjust: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 1 */
+  box-sizing: border-box; /* 2 */
+  scroll-behavior: smooth; /* 3 */
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale; /* 2 */
+  -webkit-font-smoothing: antialiased; /* 2 */
+  overflow-x: hidden; /* 3 */
+}
+
+p{
+	font-family: Inknut Antiqua;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 30px;
+	/* or 167% */
+    color: #000000;
+}
+
+.text-1{
+position: absolute;
+width: 783px;
+height: 322px;
+left: 123px;
+top: 77px;
+}
+
+.text-2{
+position: absolute;
+width: 795px;
+height: 292px;
+left: 540px;
+top: 479px;
+}
+
+span{
+	color: #023AFF;
+}
+
+/* animated beads */
+
+.beads{
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   z-index:1;
+   background: #023AFF; 
+}
+
+.bead-a {
+	top: 10.8%;
+	animation: l_floating 1s linear 0s infinite alternate;
+}
+
+.bead-b {
+	top: 13.7%;
+	animation: floating 1.5s linear 0s infinite alternate;
+}
+
+.bead-c {
+	top: 16.5%;
+	animation: l_floating 2s linear 0s infinite alternate;
+}
+
+.bead-d {
+	top: 19.2%;
+	animation: floating 3.5s linear 0s infinite alternate;
+}
+
+.bead-e {
+	top: 22%;
+	animation: l_floating 2s linear 0s infinite alternate;
+}
+
+.bead-f {
+	top: 30.2%;
+	animation: floating 1.5s linear 0s infinite alternate;
+}
+
+.bead-g {
+	top: 45.6%;
+	animation: l_floating 3s linear 0s infinite alternate;
+}
+
+.bead-h {
+	top: 51.2%;
+	animation: floating 2.5s linear 0s infinite alternate;
+}
+
+.bead-i {
+	top: 54%;
+	animation: l_floating 1s linear 0s infinite alternate;
+}
+
+.bead-j {
+	top: 67.8%;
+	animation: floating 2.5s linear 0s infinite alternate;
+}
+
+.bead-k {
+	top: 70.7%;
+	animation: l_floating 1s linear 0s infinite alternate;
+}
+
+.bead-l {
+	top: 79%;
+	animation: floating 2s linear 0s infinite alternate;
+}
+
+.bead-m {
+	top: 81.8%;
+	animation: l_floating 1.5s linear 0s infinite alternate;
+}
+
+.bead-n {
+	top: 84.6%;
+	animation: floating 2.5s linear 0s infinite alternate;
+}
+
+.bead-o {
+	top: 87.4%;
+	animation: l_floating 1s linear 0s infinite alternate;
+}
+
+
+@keyframes floating {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: 65%;
+  }
+}
+
+@keyframes l_floating {
+  0% {
+    left: 10%;
+  }
+  100% {
+    left: 34%;
+  }
+}
+
+
+/* lines for text-1 */
+
+.lines{
+	position: absolute;
+	width: 1440px;
+	height: 0px;
+	border: 1px solid rgba(0,0,0,0.25);
+}
+
+.line1{
+left: 0px;
+top: 115px;
+}
+
+.line2{
+left: 0px;
+top: 145px;
+}
+
+.line3{
+left: 0px;
+top: 175px;
+}
+
+.line4{
+left: 0px;
+top: 205px;
+}
+
+.line5{
+left: 0px;
+top: 235px;
+}
+
+.line6{
+left: 0px;
+top: 265px;
+}
+
+.line7{
+left: 0px;
+top: 295px;
+}
+
+.line8{
+left: 0px;
+top: 325px;
+}
+
+.line9{
+left: 0px;
+top: 355px;
+}
+
+.line10{
+left: 0px;
+top: 385px;
+}
+
+.line11{
+left: 0px;
+top: 415px;
+}
+
+
+/* lines for text-2 */
+.line12{
+left: 0px;
+top: 517px;
+}
+
+.line13{
+left: 0px;
+top: 547px;
+}
+
+.line14{
+left: 0px;
+top: 577px;
+}
+
+.line15{
+left: 0px;
+top: 607px;
+}
+
+.line16{
+left: 0px;
+top: 637px;
+}
+
+.line17{
+left: 0px;
+top: 667px;
+}
+
+.line18{
+left: 0px;
+top: 697px;
+}
+
+.line19{
+left: 0px;
+top: 727px;
+}
+
+.line20{
+left: 0px;
+top: 757px;
+}
+
+.line21{
+left: 0px;
+top: 787px;
+}
+
+
+/* buttons */
+
+
+a:hover {
+  background-color: #023AFF;
+  color: white;
+}
+
+/* media queries */
+
+
+@media screen and (max-width:800px) {
+	@keyframes floating {
+  	0% {
+    	left: 100%;
+  	}
+  	100% {
+    	left: -10%;
+  	}
+}
+
+.text-1{
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 290px;
+	top: 19.4%;
+	left: 8%;
+	transform: rotate(-360deg) translateY(-100px);
+}
+
+.text-2{
+	overflow-y: auto;
+	overflow-x: hidden;
+	width: 290px;
+	top: 63.4%;
+	left: 8%;
+	transform: rotate(-360deg) translateY(-100px);
+}
+
+	@keyframes l_floating {
+  	0% {
+    	left: 100%;
+  	}
+  	100% {
+    	left: -10%;
+  	}
+}
+}
+
+/* hover effects */
+
+a{
+  text-decoration: none;
+}
+
+a :hover {
+  background-color: #023AFF;
+  color: white;
+}
+
+/* linear navigation */ 
+
+.button{
+	position: absolute;
+	top: 92%;
+	margin-left: 8%;
+	text-decoration: none;
+}
+
+.next, .up {
+  background-color: black;
+  color: white;
+
+}
+
+.round {
+  border-radius: 50%;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+
+
+
+
+
+
+
+
+
